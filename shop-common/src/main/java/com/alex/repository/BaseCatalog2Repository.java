@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface BaseCatalog2Repository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.BaseCatalog2, java.lang.Integer> {
+import com.alex.entity.BaseCatalog2;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BaseCatalog2Repository extends JpaRepository<BaseCatalog2, Integer> {
 }

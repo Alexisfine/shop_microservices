@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface CommentReplayRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.CommentReplay, java.lang.Long> {
+import com.alex.entity.CommentReplay;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CommentReplayRepository extends JpaRepository<CommentReplay, Long> {
 }

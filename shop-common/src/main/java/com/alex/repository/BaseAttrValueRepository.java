@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface BaseAttrValueRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.BaseAttrValue, java.lang.Long> {
+import com.alex.entity.BaseAttrValue;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BaseAttrValueRepository extends JpaRepository<BaseAttrValue, Long> {
 }

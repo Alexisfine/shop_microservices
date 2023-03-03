@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface WareOrderTaskDetailRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.WareOrderTaskDetail, java.lang.Long> {
+import com.alex.entity.WareOrderTaskDetail;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface WareOrderTaskDetailRepository extends JpaRepository<WareOrderTaskDetail, Long> {
 }

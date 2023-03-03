@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface TempRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.Temp, java.lang.Integer> {
+import com.alex.entity.Temp;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TempRepository extends JpaRepository<Temp, Integer> {
 }

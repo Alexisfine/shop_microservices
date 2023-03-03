@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface ProductImageRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.ProductImage, java.lang.Long> {
+import com.alex.entity.ProductImage;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductImageRepository extends JpaRepository<ProductImage, Long> {
 }

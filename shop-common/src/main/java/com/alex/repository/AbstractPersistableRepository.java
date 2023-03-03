@@ -1,7 +1,9 @@
 package com.alex.repository;
 
+import org.springframework.data.jpa.domain.AbstractPersistable;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
-public interface AbstractPersistableRepository<T extends org.springframework.data.jpa.domain.AbstractPersistable, ID> extends org.springframework.data.jpa.repository.JpaRepository<T, ID> {
+public interface AbstractPersistableRepository<T extends AbstractPersistable, ID> extends JpaRepository<T, ID> {
 }

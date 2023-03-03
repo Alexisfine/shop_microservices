@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface CommentRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.Comment, java.lang.Long> {
+import com.alex.entity.Comment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CommentRepository extends JpaRepository<Comment, Long> {
 }

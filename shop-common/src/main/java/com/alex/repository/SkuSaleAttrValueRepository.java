@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface SkuSaleAttrValueRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.SkuSaleAttrValue, java.lang.Long> {
+import com.alex.entity.SkuSaleAttrValue;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SkuSaleAttrValueRepository extends JpaRepository<SkuSaleAttrValue, Long> {
 }

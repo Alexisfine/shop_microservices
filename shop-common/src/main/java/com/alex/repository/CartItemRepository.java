@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface CartItemRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.CartItem, java.lang.Long> {
+import com.alex.entity.CartItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CartItemRepository extends JpaRepository<CartItem, Long> {
 }

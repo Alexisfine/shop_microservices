@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface BrandRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.Brand, java.lang.Long> {
+import com.alex.entity.Brand;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BrandRepository extends JpaRepository<Brand, Long> {
 }

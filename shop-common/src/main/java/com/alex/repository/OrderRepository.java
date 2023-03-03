@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface OrderRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.Order, java.lang.Long> {
+import com.alex.entity.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order, Long> {
 }

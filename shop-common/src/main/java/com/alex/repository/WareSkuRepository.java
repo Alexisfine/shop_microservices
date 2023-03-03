@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface WareSkuRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.WareSku, java.lang.Long> {
+import com.alex.entity.WareSku;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface WareSkuRepository extends JpaRepository<WareSku, Long> {
 }

@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface CompanyAddressRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.CompanyAddress, java.lang.Long> {
+import com.alex.entity.CompanyAddress;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CompanyAddressRepository extends JpaRepository<CompanyAddress, Long> {
 }

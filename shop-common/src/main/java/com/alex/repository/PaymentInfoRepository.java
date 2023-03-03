@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface PaymentInfoRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.PaymentInfo, java.lang.Long> {
+import com.alex.entity.PaymentInfo;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PaymentInfoRepository extends JpaRepository<PaymentInfo, Long> {
 }

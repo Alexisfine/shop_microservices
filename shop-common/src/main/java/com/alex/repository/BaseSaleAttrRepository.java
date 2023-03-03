@@ -1,4 +1,7 @@
 package com.alex.repository;
 
-public interface BaseSaleAttrRepository extends org.springframework.data.jpa.repository.JpaRepository<com.alex.entity.BaseSaleAttr, java.lang.Long> {
+import com.alex.entity.BaseSaleAttr;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BaseSaleAttrRepository extends JpaRepository<BaseSaleAttr, Long> {
 }
